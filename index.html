@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Book App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary"></i>
+      My <span class="text-primary">Book</span>
+      List
+    </h1>
+    <!-- add book form -->
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" class="form-control" id="isbn">
+      </div>
+      <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+    </form>
+    <!-- add book form -->
+
+    <!-- table's book -->
+    <table class="table table-stribed mt-5">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+    <!-- table's book -->
+
+  </div>
+</body>
+<!-- my script -->
+<script src="main.js"></script>
+
+</html>
